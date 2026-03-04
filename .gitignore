@@ -4,19 +4,31 @@ venv/
 env/
 ENV/
 
-# Python cache files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Distribution / packaging
-dist/
+# GitHub Actions artifacts
+.github/artifacts/
+*.log
 build/
-*.egg-info/
+dist/
 
-# Local secrets
-.env
-
-# IDEs
+# IDE
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.coverage
+
+# Local config
+.env
+.env.local
+settings_local.json
+
+# Build artifacts
+*.egg-info/
+.eggs/
