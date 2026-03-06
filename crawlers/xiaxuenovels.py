@@ -14,7 +14,7 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
-from base_crawler import BaseCrawler
+from crawlers.base_crawler import BaseCrawler
 from error_handler import (
     retry_with_backoff,
     ChapterNotFoundError,
